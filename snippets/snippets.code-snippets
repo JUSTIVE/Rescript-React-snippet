@@ -1,0 +1,41 @@
+{
+  "Rescript-React component module":{
+		"prefix":"rrcm",
+		"body":[
+			"module $1 = {",
+			"  @react.component",
+			"  let make = ($2) => {",
+			"    $3",
+			"  }",
+			"}"
+		],
+		"description": "Rescript React component module"
+	},
+	"File level Rescript-React component":{
+		"prefix":"tcm",
+		"body":[
+			"@react.component",
+			"let make = ($1) => {",
+			"  $2",
+			"}",
+		],
+		"description": "Rescript React component module"
+	},
+	"Rescript-React Relay query module":{
+		"prefix":"rrqm",
+		"body":[
+			"module Query = %relay(`",
+			"  query $1 {",
+			"    $2",
+			"  }",
+			"`)"
+		],
+		"description":"Rescript-React Relay query module "
+	},
+	"Rescript Tailwind ppx":{
+		"prefix":"twc",
+		"body":[
+			"%twc(\"$1\")"
+		]
+	},
+}
