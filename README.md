@@ -45,7 +45,7 @@ module Query = %relay(`
 
 ```rescript
 module Query = %relay(`
-  query $1 ($2) {
+  mutation $1 ($2) {
     $3
   }
 `)
