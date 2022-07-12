@@ -1,7 +1,8 @@
 # Rescript-React-snippet
+
 a shorthand snippets for rescript-react
 
-following snippets are supported: 
+following snippets are supported:
 
 ---
 
@@ -13,12 +14,12 @@ module $1 = {
   let make = ($2) => {
     $3
   }
-} 
+}
 ```
 
 ---
 
-### `flc` : File Level Component 
+### `flc` : File Level Component
 
 ```rescript
 @react.component
@@ -33,7 +34,7 @@ let make = ($1) => {
 
 ```rescript
 module Query = %relay(`
-  query $1 ($2) {
+  query ${FileName}${_yourQueryName_}Query ($2) {
     $3
   }
 `)
@@ -45,7 +46,17 @@ module Query = %relay(`
 
 ```rescript
 module Mutation = %relay(`
-  mutation $1 ($2) {
+  mutation ${FileName}${1:_yourMutationName_}Mutation ($2) {
+    $3
+  }
+`)
+```
+
+### `rfm` : Rescript react relay Fragment Module
+
+```rescript
+module Fragment = %relay(`
+  fragment ${FileName}${_yourFragmentName_}Fragment on ${2:queryName} {
     $3
   }
 `)
