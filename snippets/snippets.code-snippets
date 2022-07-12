@@ -43,6 +43,17 @@
 		],
 		"description":"Rescript-React Relay mutation module "
 	},
+
+	"Rescript-React Relay Fragment module":{
+		"prefix": "rfm",
+		"body": [
+			"module Fragment = %relay(`",
+			"  fragment ${TM_FILENAME_BASE/_//g}${1:_yourFragmentName_}Fragment on ${2:queryName} {",
+			"    $3",
+			"  }",
+			"`)"
+		],
+	},
 	"Rescript Tailwind ppx":{
 		"prefix":"twc",
 		"body":[
