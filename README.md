@@ -44,7 +44,7 @@ module Query = %relay(`
 ### `rmm` : Rescript react relay Mutation Module
 
 ```rescript
-module Query = %relay(`
+module Mutation = %relay(`
   mutation $1 ($2) {
     $3
   }
