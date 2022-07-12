@@ -4,7 +4,7 @@
   "description": "a shorthand snippets for rescript-react",
   "repository": "https://github.com/JUSTIVE/Rescript-React-snippet",
   "publisher": "JUSTIVE",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "engines": {
     "vscode": "^1.0.0"
   },
