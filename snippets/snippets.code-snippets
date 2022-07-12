@@ -25,7 +25,7 @@
 		"prefix":"rqm",
 		"body":[
 			"module Query = %relay(`",
-			"  query ${1:queryName} ($2) {",
+			"  query ${TM_FILENAME_BASE/_//g}${1:_yourQueryName_}Query ($2) {",
 			"    $3",
 			"  }",
 			"`)"
@@ -36,7 +36,7 @@
 		"prefix": "rmm",
 		"body": [
 			"module Mutation = %relay(`",
-			"  mutation ${1:mutationName} ($2) {",
+			"  mutation ${TM_FILENAME_BASE/_//g}${1:_yourMutationName_}Mutation ($2) {",
 			"    $3",
 			"  }",
 			"`)"
