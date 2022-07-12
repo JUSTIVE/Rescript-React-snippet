@@ -50,3 +50,15 @@ module Mutation = %relay(`
   }
 `)
 ```
+
+### `twc` : Rescript react Tailwind classname
+
+```rescript
+className=%twc(\"$1\")
+```
+
+### `rrs` : Rescript React String
+
+```rescript
+{`${1:string}`->React.string}
+```
