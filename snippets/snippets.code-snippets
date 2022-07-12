@@ -2,7 +2,7 @@
 	"Rescript-React component module":{
 		"prefix":"rcm",
 		"body":[
-			"module $1 = {",
+			"module ${1:ModuleName} = {",
 			"  @react.component",
 			"  let make = ($2) => {",
 			"    $3",
@@ -25,7 +25,7 @@
 		"prefix":"rqm",
 		"body":[
 			"module Query = %relay(`",
-			"  query $1 ($2) {",
+			"  query ${1:queryName} ($2) {",
 			"    $3",
 			"  }",
 			"`)"
@@ -36,7 +36,7 @@
 		"prefix": "rmm",
 		"body": [
 			"module Mutation = %relay(`",
-			"  mutation $1 ($2) {",
+			"  mutation ${1:mutationName} ($2) {",
 			"    $3",
 			"  }",
 			"`)"
@@ -46,7 +46,13 @@
 	"Rescript Tailwind ppx":{
 		"prefix":"twc",
 		"body":[
-			"%twc(\"$1\")"
+			"className=%twc(\"$1\")"
 		]
 	},
+	"Rescript-React String":{
+		"prefix": "rrs",
+		"body": [
+			"{`${1:string}`->React.string}"
+		],
+	}
 }
