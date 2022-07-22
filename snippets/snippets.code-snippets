@@ -1,70 +1,69 @@
 {
-	"Rescript-React component module":{
-		"prefix":"rcm",
-		"body":[
-			"module ${1:ModuleName} = {",
-			"  @react.component",
-			"  let make = ($2) => {",
-			"    $3",
-			"  }",
-			"}"
-		],
-		"description": "Rescript React component module"
-	},
-	"File level Rescript-React component":{
-		"prefix":"flc",
-		"body":[
-			"@react.component",
-			"let make = ($1) => {",
-			"  $2",
-			"}",
-		],
-		"description": "Rescript React component module"
-	},
-	"Rescript-React Relay query module":{
-		"prefix":"rqm",
-		"body":[
-			"module Query = %relay(`",
-			"  query ${TM_FILENAME_BASE/_//g}${1:_yourQueryName_}Query ($2) {",
-			"    $3",
-			"  }",
-			"`)"
-		],
-		"description":"Rescript-React Relay query module "
-	},
-	"Rescript-React Relay mutation module":{
-		"prefix": "rmm",
-		"body": [
-			"module Mutation = %relay(`",
-			"  mutation ${TM_FILENAME_BASE/_//g}${1:_yourMutationName_}Mutation ($2) {",
-			"    $3",
-			"  }",
-			"`)"
-		],
-		"description":"Rescript-React Relay mutation module "
-	},
+  //general
+  "Rescript-React component module": {
+    "prefix": "rcm",
+    "body": ["module ${1:ModuleName} = {", "  @react.component", "  let make = ($2) => {", "    $3", "  }", "}"],
+    "description": "Rescript React component module"
+  },
+  "File level Rescript-React component": {
+    "prefix": "flc",
+    "body": ["@react.component", "let make = ($1) => {", "  $2", "}"],
+    "description": "Rescript React component module"
+  },
+  "Rescript-React String": {
+    "prefix": "rrs",
+    "body": ["{${1:string}->React.string}"]
+  },
+  "Rescript-React String with backtick": {
+    "prefix": "rrsb",
+    "body": ["{`${1:string}`->React.string}"]
+  },
+  //rescript-relay related
+  "Rescript-React Relay query module": {
+    "prefix": "rqm",
+    "body": [
+      "module Query = %relay(`",
+      "  query ${TM_FILENAME_BASE/_//g}${1:_yourQueryName_}Query ($2) {",
+      "    $3",
+      "  }",
+      "`)"
+    ],
+    "description": "Rescript-React Relay query module "
+  },
+  "Rescript-React Relay mutation module": {
+    "prefix": "rmm",
+    "body": [
+      "module Mutation = %relay(`",
+      "  mutation ${TM_FILENAME_BASE/_//g}${1:_yourMutationName_}Mutation ($2) {",
+      "    $3",
+      "  }",
+      "`)"
+    ],
+    "description": "Rescript-React Relay mutation module "
+  },
 
-	"Rescript-React Relay Fragment module":{
-		"prefix": "rfm",
-		"body": [
-			"module Fragment = %relay(`",
-			"  fragment ${TM_FILENAME_BASE/_//g}${1:_yourFragmentName_}Fragment on ${2:queryName} {",
-			"    $3",
-			"  }",
-			"`)"
-		],
-	},
-	"Rescript Tailwind ppx":{
-		"prefix":"twc",
-		"body":[
-			"className=%twc(\"$1\")"
-		]
-	},
-	"Rescript-React String":{
-		"prefix": "rrs",
-		"body": [
-			"{`${1:string}`->React.string}"
-		],
-	},
-	
+  "Rescript-React Relay Fragment module": {
+    "prefix": "rfm",
+    "body": [
+      "module Fragment = %relay(`",
+      "  fragment ${TM_FILENAME_BASE/_//g}${1:_yourFragmentName_}Fragment on ${2:queryName} {",
+      "    $3",
+      "  }",
+      "`)"
+    ]
+  },
+  //@greenlabs/res-tailwindcss related
+  "Rescript Tailwindcss ppx": {
+    "prefix": "twc",
+    "body": ["%twc(\"$1\")"]
+  },
+  "Rescript React Tailwindcss ppx with ClassName": {
+    "prefix": "twcc",
+    "body": ["className=%twc(\"$1\")"]
+  },
+	//rescript-classnames related
+  "Rescript-React Tailwind With Rescript-classnames ": {
+    "prefix": "cnm",
+    "body": ["className={Cn.make([%twc(\"$1\"),])}"]
+  }
 }

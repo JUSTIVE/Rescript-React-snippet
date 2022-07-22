@@ -2,7 +2,22 @@
 
 a shorthand snippets for rescript-react
 
-following snippets are supported:
+lists of supported snippets:
+
+- general
+  - `rcm` : `R`escript react `C`omponent `M`odule
+  - `flc` : `F`ile `L`evel rescript react `C`omponent
+  - `rrs` : `R`escript `R`eact `S`tring
+  - `rrsb` : `R`escript `R`eact `S`tring with `B`acktick
+- [rescript-relay](https://www.npmjs.com/package/rescript-relay) related
+  - `rqm` : `R`escript react `Q`uery `M`odule
+  - `rmm` : `R`escript react `M`utation `M`odule
+  - `rfm` : `R`escript react `F`ragment `M`odule
+- [@greenlabs/res-tailwindcss](https://www.npmjs.com/package/@greenlabs/res-tailwindcss) related
+  - `twc` : rescript react `T`ail`W`ind`C`ss ppx
+  - `twcc` : rescript react `T`ail`W`ind`C`ss ppx with `C`lassname
+- [rescript-classnames](https://www.npmjs.com/package/rescript-classnames) related
+  - `cnm` : `C`lass`N`ame `M`ake
 
 ---
 
@@ -32,7 +47,28 @@ let make = ($1) => {
 
 ---
 
+### `rrs` : Rescript React String
+
+![rrs gif](./img/rqm.gif)
+
+```rescript
+{${1:string}->React.string}
+```
+
+---
+
+### `rrsb` : Rescript React String with Backtick
+
+```rescript
+{`${1:string}`->React.string}
+```
+
+---
+
 ### `rqm` : Rescript react relay Query Module
+
+> prerequisite dependencies
+> - [rescript-relay](https://www.npmjs.com/package/rescript-relay)
 
 ![rqm gif](./img/rqm.gif)
 
@@ -48,6 +84,9 @@ module Query = %relay(`
 
 ### `rmm` : Rescript react relay Mutation Module
 
+> prerequisite dependencies
+> - [rescript-relay](https://www.npmjs.com/package/rescript-relay)
+
 ```rescript
 module Mutation = %relay(`
   mutation ${FileName}${1:_yourMutationName_}Mutation ($2) {
@@ -56,7 +95,12 @@ module Mutation = %relay(`
 `)
 ```
 
+---
+
 ### `rfm` : Rescript react relay Fragment Module
+
+> prerequisite dependencies
+> - [rescript-relay](https://www.npmjs.com/package/rescript-relay)
 
 ```rescript
 module Fragment = %relay(`
@@ -66,16 +110,13 @@ module Fragment = %relay(`
 `)
 ```
 
+---
+
 ### `twc` : Rescript react Tailwind classname
+
+> prerequisite dependencies
+> - [@greenlabs/res-tailwindcss](https://www.npmjs.com/package/@greenlabs/res-tailwindcss)
 
 ```rescript
 className=%twc(\"$1\")
-```
-
-### `rrs` : Rescript React String
-
-![rrs gif](./img/rqm.gif)
-
-```rescript
-{`${1:string}`->React.string}
 ```
