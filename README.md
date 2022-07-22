@@ -8,6 +8,8 @@ following snippets are supported:
 
 ### `rcm` : Rescript react Component Module
 
+![rcm gif](./img/rcm.gif)
+
 ```rescript
 module $1 = {
   @react.component
@@ -31,6 +33,8 @@ let make = ($1) => {
 ---
 
 ### `rqm` : Rescript react relay Query Module
+
+![rqm gif](./img/rqm.gif)
 
 ```rescript
 module Query = %relay(`
@@ -69,6 +73,8 @@ className=%twc(\"$1\")
 ```
 
 ### `rrs` : Rescript React String
+
+![rrs gif](./img/rqm.gif)
 
 ```rescript
 {`${1:string}`->React.string}
