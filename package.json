@@ -5,6 +5,7 @@
   "repository": "https://github.com/JUSTIVE/Rescript-React-snippet",
   "publisher": "JUSTIVE",
   "version": "0.1.0",
+  "icon":"./icon.png",
   "engines": {
     "vscode": "^1.0.0"
   },
