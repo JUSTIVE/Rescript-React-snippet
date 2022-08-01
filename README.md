@@ -4,11 +4,15 @@ a shorthand snippets for rescript-react
 
 lists of supported snippets:
 
-- general
+- rescript
+  - `resm` : `Res`cript `M`odule
+  - `resmwt` : `Res`cript `M`odule `W`ith its `T`ype
+- rescript-react related
   - `rcm` : `R`escript react `C`omponent `M`odule
   - `flc` : `F`ile `L`evel rescript react `C`omponent
   - `rrs` : `R`escript `R`eact `S`tring
   - `rrsb` : `R`escript `R`eact `S`tring with `B`acktick
+  - `rrus` : `R`escript `R`eact `U`se`S`tate
 - [rescript-relay](https://www.npmjs.com/package/rescript-relay) related
   - `rqm` : `R`escript react `Q`uery `M`odule
   - `rmm` : `R`escript react `M`utation `M`odule
@@ -68,6 +72,7 @@ let make = ($1) => {
 ### `rqm` : Rescript react relay Query Module
 
 > prerequisite dependencies
+>
 > - [rescript-relay](https://www.npmjs.com/package/rescript-relay)
 
 ![rqm gif](./img/rqm.gif)
@@ -85,6 +90,7 @@ module Query = %relay(`
 ### `rmm` : Rescript react relay Mutation Module
 
 > prerequisite dependencies
+>
 > - [rescript-relay](https://www.npmjs.com/package/rescript-relay)
 
 ```rescript
@@ -100,6 +106,7 @@ module Mutation = %relay(`
 ### `rfm` : Rescript react relay Fragment Module
 
 > prerequisite dependencies
+>
 > - [rescript-relay](https://www.npmjs.com/package/rescript-relay)
 
 ```rescript
@@ -115,6 +122,7 @@ module Fragment = %relay(`
 ### `twc` : Rescript react Tailwind classname
 
 > prerequisite dependencies
+>
 > - [@greenlabs/res-tailwindcss](https://www.npmjs.com/package/@greenlabs/res-tailwindcss)
 
 ```rescript

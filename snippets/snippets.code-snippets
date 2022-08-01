@@ -1,5 +1,14 @@
 {
-  //general
+  //rescript
+  "Rescript Module": {
+    "prefix": "resm",
+    "body": "module ${1:ModuleName} = {\n\t$2\n}"
+  },
+  "Rescript Module With Type": {
+    "prefix": "resmwt",
+    "body": ["module ${1:ModuleName} = {", "  type t = $2", "  let make = ($3) => {", "    $4", "  }", "}"]
+  },
+  //rescript-react related
   "Rescript-React component module": {
     "prefix": "rcm",
     "body": ["module ${1:ModuleName} = {", "  @react.component", "  let make = ($2) => {", "    $3", "  }", "}"],
@@ -18,6 +27,11 @@
     "prefix": "rrsb",
     "body": ["{`${1:string}`->React.string}"]
   },
+  "Rescript-React UseState": {
+    "prefix": "rrus",
+    "body": ["let (${1:state}, set${1/(.*)/${1:/pascalcase}/}) = React.Uncurried.useState(_ => ${2:initialState})"]
+  },
+
   //rescript-relay related
   "Rescript-React Relay query module": {
     "prefix": "rqm",
@@ -61,7 +75,7 @@
     "prefix": "twcc",
     "body": ["className=%twc(\"$1\")"]
   },
-	//rescript-classnames related
+  //rescript-classnames related
   "Rescript-React Tailwind With Rescript-classnames ": {
     "prefix": "cnm",
     "body": ["className={Cn.make([%twc(\"$1\"),])}"]
