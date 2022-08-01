@@ -13,6 +13,7 @@ lists of supported snippets:
   - `rrs` : `R`escript `R`eact `S`tring
   - `rrsb` : `R`escript `R`eact `S`tring with `B`acktick
   - `rrus` : `R`escript `R`eact `U`se`S`tate
+  - `rrue0~7` : `R`escript `R`eact `U`se`E`ffect
 - [rescript-relay](https://www.npmjs.com/package/rescript-relay) related
   - `rqm` : `R`escript react `Q`uery `M`odule
   - `rmm` : `R`escript react `M`utation `M`odule

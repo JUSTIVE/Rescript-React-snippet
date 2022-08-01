@@ -31,7 +31,79 @@
     "prefix": "rrus",
     "body": ["let (${1:state}, set${1/(.*)/${1:/pascalcase}/}) = React.Uncurried.useState(_ => ${2:initialState})"]
   },
-
+  "Rescript-React UseEffect0": {
+    "prefix": "rrue0",
+    "body": [
+      "React.useEffect0(_ => {",
+      "  $1",
+      "  None",
+      "})"
+    ]
+  },
+  "Rescript-React UseEffect1": {
+    "prefix": "rrue1",
+    "body": [
+      "React.useEffect1(_ => {",
+      "  $1",
+      "",
+      "  None",
+      "},[${2:dependency}])"
+    ]
+  },
+  "Rescript-React UseEffect2": {
+    "prefix": "rrue2",
+    "body": [
+      "React.useEffect2(_ => {",
+      "  $1",
+      "  None",
+      "},(${2:dependency1},${3:dependency2}))",
+    ]
+  },
+  "Rescript-React UseEffect3": {
+    "prefix": "rrue3",
+    "body": [
+      "React.useEffect3(_ => {",
+      "  $1",
+      "  None",
+      "},(${2:dependency1},${3:dependency2},${4:dependency3}))",
+    ]
+  },
+  "Rescript-React UseEffect4": {
+    "prefix": "rrue4",
+    "body": [
+      "React.useEffect4(_ => {",
+      "  $1",
+      "  None",
+      "},(${2:dependency1},${3:dependency2},${4:dependency3},${5:dependency4}))",
+    ]
+  },
+  "Rescript-React UseEffect5": {
+    "prefix": "rrue5",
+    "body": [
+      "React.useEffect5(_ => {",
+      "  $1",
+      "  None",
+      "},(${2:dependency1},${3:dependency2},${4:dependency3},${5:dependency4},${6:dependency5}))",
+    ]
+  },
+  "Rescript-React UseEffect6": {
+    "prefix": "rrue6",
+    "body": [
+      "React.useEffect6(_ => {",
+      "  $1",
+      "  None",
+      "},(${2:dependency1},${3:dependency2},${4:dependency3},${5:dependency4},${6:dependency5},${7:dependency6}))",
+    ]
+  },
+  "Rescript-React UseEffect7": {
+    "prefix": "rrue7",
+    "body": [
+      "React.useEffect7(_ => {",
+      "  $1",
+      "  None",
+      "},(${2:dependency1},${3:dependency2},${4:dependency3},${5:dependency4},${6:dependency5},${7:dependency6},${8:dependency7}))",
+    ]
+  },
   //rescript-relay related
   "Rescript-React Relay query module": {
     "prefix": "rqm",
