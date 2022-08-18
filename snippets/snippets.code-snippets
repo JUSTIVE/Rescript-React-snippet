@@ -104,6 +104,10 @@
       "},(${2:dependency1},${3:dependency2},${4:dependency3},${5:dependency4},${6:dependency5},${7:dependency6},${8:dependency7}))",
     ]
   },
+  "Rescript-React UseRef": {
+    "prefix": "rrref",
+    "body": ["let ${1:ref} = React.useRef(${2:initialValue})"]
+  },
   //rescript-relay related
   "Rescript-React Relay query module": {
     "prefix": "rqm",
