@@ -21,15 +21,15 @@
   },
   "Rescript-React String": {
     "prefix": "rrs",
-    "body": ["{${1:string}->React.string}"]
+    "body": ["{${1:${TM_SELECTED_TEXT}}->React.string}"]
   },
   "Rescript-React String with Double Quotes": {
     "prefix": "rrsdq",
-    "body": ["{\"${1:string}\"->React.string}"]
+    "body": ["{\"${1:${TM_SELECTED_TEXT}}\"->React.string}"]
   },
   "Rescript-React String with backtick": {
     "prefix": "rrsb",
-    "body": ["{`${1:string}`->React.string}"]
+    "body": ["{`${1:${TM_SELECTED_TEXT}}`->React.string}"]
   },
   "Rescript-React UseState": {
     "prefix": "rrus",
