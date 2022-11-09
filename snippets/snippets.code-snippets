@@ -25,7 +25,7 @@
   },
   "Rescript-React String with Double Quotes": {
     "prefix": "rrsdq",
-    "body": ["\"${1:string}\"->React.string}"]
+    "body": ["{\"${1:string}\"->React.string}"]
   },
   "Rescript-React String with backtick": {
     "prefix": "rrsb",
